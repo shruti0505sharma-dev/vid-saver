@@ -42,13 +42,18 @@ ALLOWED_ORIGINS = {o.strip() for o in os.environ.get("ALLOWED_ORIGIN", "").split
 
 @app.after_request
 def cors(resp):
-    """Only needed when the React site is hosted elsewhere (e.g. Vercel)."""
+    """Allow CORS for external frontend (e.g. Vercel)."""
     origin = request.headers.get("Origin")
-    if origin and origin in ALLOWED_ORIGINS:
-        resp.headers["Access-Control-Allow-Origin"] = origin
-        resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    if origin:
+        if not ALLOWED_ORIGINS or origin in ALLOWED_ORIGINS or "*" in ALLOWED_ORIGINS:
+            resp.headers["Access-Control-Allow-Origin"] = origin
+            resp.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+            resp.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+            resp.headers["Vary"] = "Origin"
+    else:
+        resp.headers["Access-Control-Allow-Origin"] = "*"
+        resp.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
         resp.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
-        resp.headers["Vary"] = "Origin"
     return resp
 
 

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Saver</title>
+<style>
+  :root { --bg:#0f1115; --card:#181b22; --text:#e8eaf0; --muted:#8b91a1; --accent:#6c5ce7; --err:#ff6b6b; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f4f5f9; --card:#fff; --text:#1c1e26; --muted:#6a7080; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--text);
+         min-height:100vh; display:flex; justify-content:center; padding:48px 16px; }
+  main { width:100%; max-width:560px; }
+  h1 { margin:0 0 6px; font-size:28px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border-radius:14px; padding:20px; box-shadow:0 4px 24px #0002; }
+  .row { display:flex; gap:8px; }
+  input[type=url] { flex:1; min-width:0; padding:12px 14px; border-radius:10px; border:1px solid #8884;
+         background:transparent; color:var(--text); font-size:16px; }
+  button, .btn { padding:12px 18px; border:0; border-radius:10px; background:var(--accent); color:#fff;
+         font-size:15px; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:wait; }
+  .err { color:var(--err); margin-top:12px; }
+  #result { display:none; margin-top:20px; }
+  #result img { width:100%; border-radius:10px; }
+  #title { font-weight:600; margin:12px 0 2px; }
+  #meta { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  select { padding:12px; border-radius:10px; border:1px solid #8884; background:var(--card); color:var(--text); font-size:15px; }
+  .note { color:var(--muted); font-size:12px; margin-top:20px; line-height:1.5; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Video Saver</h1>
+  <p class="sub">Paste a YouTube or Instagram link to download the video.</p>
+
+  <div class="card">
+    <form id="form" class="row">
+      <input type="url" id="url" placeholder="https://www.youtube.com/watch?v=..." required autofocus>
+      <button id="go">Fetch</button>
+    </form>
+    <div id="error" class="err"></div>
+
+    <div id="result">
+      <img id="thumb" alt="">
+      <div id="title"></div>
+      <div id="meta"></div>
+      <div class="row">
+        <select id="quality"></select>
+        <button id="dl" style="flex:1">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Only download content you own or have permission to save. Respect copyright and the
+  terms of service of each platform. Private Instagram posts are not supported.</p>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+let currentUrl = "";
+
+function fmt(s) {
+  if (!s) return "";
+  const m = Math.floor(s / 60), sec = String(s % 60).padStart(2, "0");
+  return `${m}:${sec}`;
+}
+
+$("form").addEventListener("submit", async e => {
+  e.preventDefault();
+  $("error").textContent = "";
+  $("result").style.display = "none";
+  $("go").disabled = true; $("go").textContent = "Fetching…";
+  currentUrl = $("url").value.trim();
+  try {
+    const r = await fetch("/api/info", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({url: currentUrl})
+    });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error);
+    $("thumb").src = d.thumbnail || "";
+    $("thumb").style.display = d.thumbnail ? "block" : "none";
+    $("title").textContent = d.title || "Untitled";
+    $("meta").textContent = [d.uploader, fmt(d.duration)].filter(Boolean).join(" · ");
+    const q = $("quality");
+    q.innerHTML = "";
+    q.add(new Option("Best quality", ""));
+    (d.heights || []).forEach(h => q.add(new Option(h + "p", "video:" + h)));
+    q.add(new Option("Audio only", "audio"));
+    $("result").style.display = "block";
+  } catch (err) {
+    $("error").textContent = err.message;
+  } finally {
+    $("go").disabled = false; $("go").textContent = "Fetch";
+  }
+});
+
+$("dl").addEventListener("click", () => {
+  const v = $("quality").value;
+  const p = new URLSearchParams({url: currentUrl});
+  if (v === "audio") p.set("kind", "audio");
+  else if (v.startsWith("video:")) p.set("height", v.slice(6));
+  $("dl").textContent = "Preparing…";
+  setTimeout(() => $("dl").textContent = "Download", 4000);
+  window.location = "/api/download?" + p;
+});
+</script>
+</body>
+</html>

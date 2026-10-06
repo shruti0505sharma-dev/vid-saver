@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vidsaver
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      # Put your final address here once you know it, e.g. https://yourname.onrender.com
+      - key: SITE_URL
+        sync: false

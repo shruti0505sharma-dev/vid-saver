@@ -1,0 +1,22 @@
+:root {
+  --paper: #f5f1e8;
+  --card: #fffdf8;
+  --ink: #16130f;
+  --muted: #655f55;
+  --line: #16130f26;
+  --accent: #ff5a1f;
+  --err: #c2260c;
+  --display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --body: 'Instrument Sans', 'Segoe UI', system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; }
+body {
+  margin: 0; min-height: 100vh; overflow-x: hidden;
+  background: var(--paper); color: var(--ink);
+  font-family: var(--body); font-size: 16px; line-height: 1.5;
+}
+button { font-family: inherit; }
+::selection { background: var(--accent); color: var(--ink); }

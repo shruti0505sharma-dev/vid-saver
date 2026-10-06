@@ -1,0 +1,374 @@
+{
+  "siteName": "VidSaver",
+  "contactEmail": "contact@yourdomain.com",
+  "howTo": [
+    "Copy the video link from the YouTube or Instagram app or website.",
+    "Paste the link into the box above and press Download.",
+    "Wait a few seconds for the short ad, then choose your quality if you want another one.",
+    "The video is saved to your phone or computer."
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "nav": true,
+      "label": "Video Downloader",
+      "title": "Free YouTube & Instagram Video Downloader - HD, No Sign-up | VidSaver",
+      "description": "Download YouTube and Instagram videos for free in HD. Paste the link, pick 1080p, 720p or audio-only and save it in seconds. No app, no sign-up.",
+      "keywords": "video downloader, youtube video downloader, instagram video downloader, download youtube videos, save instagram reels, free online video downloader",
+      "h1": "Save YouTube and Instagram videos.",
+      "h1grad": "Just paste the link.",
+      "sub": "No app, no sign-up. Paste a link, choose a quality and the file downloads to your device.",
+      "placeholder": "Paste your video link here…",
+      "article": [
+        {
+          "h": "A simple online video downloader",
+          "p": "VidSaver lets you save public YouTube and Instagram videos to your phone or computer. There is nothing to install and no account to create. You paste a link, press Download and the file is ready in a few seconds."
+        },
+        {
+          "h": "Choose the quality you need",
+          "p": "Pick the best available quality for a sharp picture, or choose a smaller size such as 720p or 360p to save data and storage. If you only want the sound, choose Audio and download just the audio track."
+        },
+        {
+          "h": "Works on phone, tablet and computer",
+          "p": "The site is built for mobile first. Open it in Chrome, Safari or any modern browser, paste the link you copied from the YouTube or Instagram app and the video is saved to your device."
+        },
+        {
+          "h": "Use it responsibly",
+          "p": "Only download videos you own or have permission to save, such as your own uploads or content with a licence that allows downloading. Respect creators and the terms of each platform."
+        }
+      ]
+    },
+    {
+      "path": "/youtube-video-downloader",
+      "nav": true,
+      "label": "YouTube Downloader",
+      "title": "YouTube Video Downloader - Save YouTube Videos in HD Free | VidSaver",
+      "description": "Free online YouTube video downloader. Paste a YouTube link and download the video in 1080p, 720p or 360p MP4, or save just the audio. Works on phone and PC.",
+      "keywords": "youtube video downloader, download youtube video, youtube downloader online, youtube to mp4, save youtube video, youtube downloader hd",
+      "h1": "YouTube Video Downloader",
+      "h1grad": "in HD, free.",
+      "sub": "Paste a YouTube link and download the video as MP4 in the quality you choose, or save only the audio.",
+      "placeholder": "Paste your YouTube link here…",
+      "article": [
+        {
+          "h": "How to download a YouTube video",
+          "p": "Open the video on YouTube, tap Share and copy the link. Paste it into the box on this page and press Download. After a short ad the file starts saving. You can pick a different quality afterwards with the quality buttons."
+        },
+        {
+          "h": "Which formats and qualities are supported?",
+          "p": "Videos are saved as MP4. Depending on the original upload you can choose from the best available quality down to 360p. Audio-only downloads are saved as M4A."
+        },
+        {
+          "h": "Why is my video not downloading?",
+          "p": "Private videos, age-restricted videos and live streams that have not finished cannot be downloaded. Very long videos take more time because the video and audio are merged. If it fails, wait a minute and try again."
+        },
+        {
+          "h": "Is it safe?",
+          "p": "VidSaver does not ask for your YouTube password and does not store the videos you download. Files are removed from our server right after your download finishes."
+        }
+      ]
+    },
+    {
+      "path": "/youtube-shorts-downloader",
+      "nav": true,
+      "label": "Shorts Downloader",
+      "title": "YouTube Shorts Downloader - Save Shorts in HD for Free | VidSaver",
+      "description": "Download YouTube Shorts online for free. Copy the Shorts link, paste it here and save the vertical video to your phone in HD. No app, no sign-up.",
+      "keywords": "youtube shorts downloader, download youtube shorts, save youtube shorts, shorts video download, youtube shorts to mp4",
+      "h1": "YouTube Shorts Downloader",
+      "h1grad": "vertical HD videos.",
+      "sub": "Copy a YouTube Shorts link, paste it below and save the short video to your device.",
+      "placeholder": "Paste your YouTube Shorts link here…",
+      "article": [
+        {
+          "h": "Save YouTube Shorts in a few taps",
+          "p": "Open the Short in the YouTube app, tap Share, then Copy link. Paste the link above and press Download. Shorts are usually small, so the download is quick."
+        },
+        {
+          "h": "Original vertical format",
+          "p": "Shorts are saved in their original vertical shape, ready to watch offline or to reuse in your own edits where you have the right to do so."
+        },
+        {
+          "h": "Only save what you may",
+          "p": "Shorts belong to their creators. Download only your own Shorts or videos you have permission to use, and give credit where it is needed."
+        }
+      ]
+    },
+    {
+      "path": "/instagram-video-downloader",
+      "nav": true,
+      "label": "Instagram Downloader",
+      "title": "Instagram Video Downloader - Save Instagram Videos Free | VidSaver",
+      "description": "Download Instagram videos online for free. Paste the post link and save the video to your phone or computer in HD. No login or app needed.",
+      "keywords": "instagram video downloader, download instagram video, instagram downloader online, save instagram video, instagram post downloader",
+      "h1": "Instagram Video Downloader",
+      "h1grad": "no login needed.",
+      "sub": "Paste the link of a public Instagram video and save it to your device in seconds.",
+      "placeholder": "Paste your Instagram link here…",
+      "article": [
+        {
+          "h": "How to download an Instagram video",
+          "p": "Open the post in Instagram, tap the three dots or the paper-plane icon and choose Copy link. Paste it into the box above and press Download."
+        },
+        {
+          "h": "Public posts only",
+          "p": "Only public posts can be downloaded. Videos from private accounts and content that needs a login are not available through VidSaver."
+        },
+        {
+          "h": "Your privacy",
+          "p": "We do not ask for your Instagram username or password. Never share your login with any downloader site."
+        }
+      ]
+    },
+    {
+      "path": "/instagram-reels-downloader",
+      "nav": true,
+      "label": "Reels Downloader",
+      "title": "Instagram Reels Downloader - Download Reels in HD Free | VidSaver",
+      "description": "Download Instagram Reels in HD for free. Copy the Reel link, paste it here and save the video to your gallery. Fast, no sign-up.",
+      "keywords": "instagram reels downloader, download instagram reels, reels downloader online, save instagram reels, reel video download hd",
+      "h1": "Instagram Reels Downloader",
+      "h1grad": "save any public Reel.",
+      "sub": "Copy a Reel link, paste it below and download it in HD to your phone or computer.",
+      "placeholder": "Paste your Reel link here…",
+      "article": [
+        {
+          "h": "Download Instagram Reels in HD",
+          "p": "Open the Reel, tap Share and copy the link. Paste it into the box on this page and press Download. The Reel is saved as an MP4 with sound."
+        },
+        {
+          "h": "Where is my Reel saved?",
+          "p": "On Android the file goes to your Downloads folder and shows up in your gallery or files app. On iPhone, open the download in Safari and use Save to Files or Save Video."
+        },
+        {
+          "h": "Credit the creator",
+          "p": "If you share or repost a Reel, ask for permission and credit the original creator."
+        }
+      ]
+    },
+    {
+      "path": "/youtube-audio-downloader",
+      "nav": true,
+      "label": "Audio Downloader",
+      "title": "YouTube Audio Downloader - Save Audio from YouTube Videos | VidSaver",
+      "description": "Extract and download audio from YouTube videos for free. Paste the link, choose Audio and save the sound as M4A. Works on mobile and desktop.",
+      "keywords": "youtube audio downloader, download audio from youtube, youtube to audio, extract audio from youtube video, youtube audio m4a",
+      "h1": "YouTube Audio Downloader",
+      "h1grad": "just the sound.",
+      "sub": "Paste a YouTube link, choose Audio and download only the sound track of the video.",
+      "placeholder": "Paste your YouTube link here…",
+      "article": [
+        {
+          "h": "Audio-only downloads",
+          "p": "Paste a YouTube link, press Download, then pick Audio with the quality buttons and download again. You get the sound only, which is much smaller than the full video."
+        },
+        {
+          "h": "What format is the audio?",
+          "p": "Audio is saved as M4A, which plays on almost every phone, computer and media player."
+        },
+        {
+          "h": "Good uses",
+          "p": "Saving your own podcasts, lectures you have permission to keep, royalty-free music or talks for offline listening."
+        }
+      ]
+    },
+    {
+      "path": "/how-to-download-instagram-reels",
+      "nav": false,
+      "label": "How to download Reels",
+      "title": "How to Download Instagram Reels on Android & iPhone (Step by Step)",
+      "description": "Step-by-step guide to download Instagram Reels on Android, iPhone and PC. Copy the link, paste it into VidSaver and save the Reel in HD.",
+      "keywords": "how to download instagram reels, save reels on android, download reels iphone, instagram reel download steps",
+      "h1": "How to download Instagram Reels",
+      "h1grad": "step by step.",
+      "sub": "A quick guide for Android, iPhone and computer. Try it right here with the tool below.",
+      "placeholder": "Paste your Reel link here…",
+      "article": [
+        {
+          "h": "On Android",
+          "p": "Open the Reel in Instagram, tap Share, then Copy link. Open VidSaver in Chrome, paste the link and press Download. When the short ad finishes, tap Continue and the Reel is saved to your Downloads folder."
+        },
+        {
+          "h": "On iPhone",
+          "p": "Copy the Reel link the same way and open VidSaver in Safari. Press Download, then use the download icon in Safari to open the file and choose Save Video or Save to Files."
+        },
+        {
+          "h": "On a computer",
+          "p": "Copy the address of the Reel from the browser bar, paste it into VidSaver and press Download. The file lands in your browser's download folder."
+        },
+        {
+          "h": "Common problems",
+          "p": "If you see an error, check that the account is public and that you copied the full link. Private accounts cannot be downloaded."
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "kind": "info",
+      "nav": false,
+      "label": "About",
+      "title": "About VidSaver - Free Online Video Downloader",
+      "description": "About VidSaver, a free online tool to save public YouTube and Instagram videos for personal, offline use.",
+      "keywords": "about vidsaver",
+      "h1": "About VidSaver",
+      "h1grad": "",
+      "sub": "A simple, free tool to save public videos for offline viewing.",
+      "article": [
+        {
+          "h": "What we do",
+          "p": "VidSaver is a free web tool that helps you save public YouTube and Instagram videos to your own device so you can watch them offline."
+        },
+        {
+          "h": "How we keep it free",
+          "p": "The site is supported by advertising. We keep ads limited and never ask you to install anything or create an account."
+        },
+        {
+          "h": "Our rules",
+          "p": "We ask everyone to download only content they own or have permission to save. We do not host or store any videos; files are deleted right after you download them."
+        }
+      ]
+    },
+    {
+      "path": "/privacy-policy",
+      "kind": "info",
+      "nav": false,
+      "label": "Privacy Policy",
+      "title": "Privacy Policy - VidSaver",
+      "description": "How VidSaver handles your data, cookies and advertising.",
+      "keywords": "vidsaver privacy policy",
+      "h1": "Privacy Policy",
+      "h1grad": "",
+      "sub": "Last updated: October 2026",
+      "article": [
+        {
+          "h": "What we collect",
+          "p": "We do not require an account. When you use the tool we process the link you paste so we can fetch the video. Our server may keep basic technical logs such as IP address, browser type and time, used for security and to prevent abuse."
+        },
+        {
+          "h": "Downloaded files",
+          "p": "Videos are prepared temporarily on our server and are deleted right after your download completes. We do not keep a library of downloaded content."
+        },
+        {
+          "h": "Cookies and advertising",
+          "p": "We show ads from third-party advertising networks. These networks may use cookies and similar technologies to show ads and measure performance. You can control cookies in your browser settings."
+        },
+        {
+          "h": "Third parties",
+          "p": "Links you paste are sent to the original platform (YouTube or Instagram) to fetch the video. Their own privacy policies apply to their services."
+        },
+        {
+          "h": "Children",
+          "p": "This site is not directed to children under 13 and we do not knowingly collect their personal information."
+        },
+        {
+          "h": "Contact",
+          "p": "For privacy questions, email us at the address on the Contact page."
+        }
+      ]
+    },
+    {
+      "path": "/terms",
+      "kind": "info",
+      "nav": false,
+      "label": "Terms",
+      "title": "Terms of Use - VidSaver",
+      "description": "Terms of use for VidSaver, the free online video downloader.",
+      "keywords": "vidsaver terms of use",
+      "h1": "Terms of Use",
+      "h1grad": "",
+      "sub": "Last updated: October 2026",
+      "article": [
+        {
+          "h": "Personal use only",
+          "p": "VidSaver is provided for personal, non-commercial use. You may only download content that you own or that you have permission or a licence to download."
+        },
+        {
+          "h": "Your responsibility",
+          "p": "You are responsible for what you download and how you use it, including respecting copyright and the terms of service of YouTube, Instagram and any other platform."
+        },
+        {
+          "h": "No warranty",
+          "p": "The service is provided as is, without warranty. Downloads may fail or change when platforms change. We may modify or stop the service at any time."
+        },
+        {
+          "h": "Prohibited use",
+          "p": "Do not use VidSaver to infringe copyright, to harass others or to overload the service with automated requests."
+        }
+      ]
+    },
+    {
+      "path": "/dmca",
+      "kind": "info",
+      "nav": false,
+      "label": "DMCA",
+      "title": "DMCA & Copyright Policy - VidSaver",
+      "description": "How to report copyright concerns about VidSaver.",
+      "keywords": "vidsaver dmca copyright",
+      "h1": "DMCA & Copyright",
+      "h1grad": "",
+      "sub": "We respect the rights of creators.",
+      "article": [
+        {
+          "h": "We do not host content",
+          "p": "VidSaver does not host or store videos. Our tool only helps users fetch public content from the original platform at their own request."
+        },
+        {
+          "h": "Reporting a concern",
+          "p": "If you are a rights holder and believe the tool is being used in a way that infringes your rights, contact us with the link to the content, proof that you are the rights holder and your contact details. We will review the request promptly."
+        },
+        {
+          "h": "Contact",
+          "p": "Use the email address on the Contact page and put 'Copyright' in the subject line."
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "kind": "info",
+      "nav": false,
+      "label": "Contact",
+      "title": "Contact VidSaver",
+      "description": "Contact the VidSaver team for support, feedback or copyright questions.",
+      "keywords": "contact vidsaver",
+      "h1": "Contact us",
+      "h1grad": "",
+      "sub": "Questions, feedback or a problem with a download? Write to us.",
+      "article": [
+        {
+          "h": "Email",
+          "p": "{{EMAIL}}"
+        },
+        {
+          "h": "Before you write",
+          "p": "For download problems, please include the page you used and the error message you saw. We usually reply within a few days."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I download a YouTube or Instagram video?",
+      "a": "Copy the video link, paste it into the box above and press Download. Pick another quality from the options if you want, and the file is saved to your device."
+    },
+    {
+      "q": "Is VidSaver free to use?",
+      "a": "Yes. VidSaver is free, needs no sign-up and works in any modern browser on phone, tablet and computer."
+    },
+    {
+      "q": "Which video qualities are available?",
+      "a": "You can usually choose from the best available quality down to 360p, depending on what the original video offers. You can also download audio only."
+    },
+    {
+      "q": "Can I download private Instagram videos?",
+      "a": "No. Only public posts and Reels can be downloaded. Private accounts and login-only content are not supported."
+    },
+    {
+      "q": "Is it legal to download videos?",
+      "a": "Only download content you own or have permission to save, such as your own uploads or videos with a licence that allows it. Respect copyright and the terms of service of each platform."
+    },
+    {
+      "q": "Does it work on mobile?",
+      "a": "Yes. VidSaver is built for phones. Open it in Chrome or Safari, paste the link and the video is saved to your device."
+    }
+  ]
+}
